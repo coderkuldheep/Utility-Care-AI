@@ -1,0 +1,27 @@
+{
+  "name": "utilitycare-ai",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Role-aware utility billing portal with Google sign-in, SQLite and Razorpay test checkout",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "connect-sqlite3": "^0.9.16",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "google-auth-library": "^9.15.1",
+    "helmet": "^8.0.0",
+    "razorpay": "^2.9.6",
+    "googleapis": "^144.0.0"
+  }
+}
